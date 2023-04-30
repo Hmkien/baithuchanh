@@ -1,6 +1,5 @@
 INDEX VERSION 1.131+C:\Users\Admin\OneDrive - Hanoi University of Mining and Geology\Documents\thuchanhjava\.metadata\.plugins\org.eclipse.jdt.core
 747899727.index
-3442048308.index
 1865797976.index
 3002113772.index
 4218291066.index
