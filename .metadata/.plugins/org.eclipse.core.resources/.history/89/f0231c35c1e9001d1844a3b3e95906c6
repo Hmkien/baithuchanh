@@ -1,0 +1,13 @@
+package ngay2804;
+
+import java.util.LinkedHashSet;
+
+public class slide59 {
+	public static void main(String[] args) {
+	LinkedHashSet< String> lhs = new LinkedHashSet<>();
+	lhs.add("Hà");
+	lhs.add("Mạnh");
+	lhs.add("Kiên");
+	System.out.println(lhs);
+}
+}

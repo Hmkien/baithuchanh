@@ -1,0 +1,13 @@
+package ngay2804;
+
+import java.util.HashSet;
+
+public class slide53 {
+	public static void main(String[] args) {
+		HashSet<String> hs=new HashSet<>();
+		hs.add("Ha");
+		hs.add("Manh");
+		hs.add("Kien");
+		System.out.println(hs);
+	}
+}
