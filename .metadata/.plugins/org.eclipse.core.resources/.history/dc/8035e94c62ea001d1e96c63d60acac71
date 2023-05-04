@@ -6,9 +6,9 @@ public class mian {
     public static void main(String[] args) {
         DanhBaDienThoai danhBa = new DanhBaDienThoai();
         Scanner sc = new Scanner(System.in);
-       int a=1;
+        boolean check = true;
 
-      while(a==1) {
+      while(check==true) {
             System.out.println("=====MENU=====");
             System.out.println("1. Thêm mới contact");
             System.out.println("2. Cập nhật số điện thoại của contact");
@@ -17,10 +17,10 @@ public class mian {
             System.out.println("0. Thoát chương trình");
             System.out.print("Mời bạn chọn: ");
 
-            int luachon = sc.nextInt();
+            int choice = sc.nextInt();
             sc.nextLine(); 
 
-            switch (luachon) {
+            switch (choice) {
                 case 1:
                     System.out.print("Nhập tên: ");
                     String ten = sc.nextLine();
@@ -43,9 +43,9 @@ public class mian {
                 case 4:
                     System.out.print("Nhập tên cần tìm kiếm: ");
                     ten= sc.nextLine();
-                    danhBa.timKiem(ten);
-                    break;
-                case 0 : a = 2;
+                    System.out.println(danhBa.timKiem(ten));
+                case 0 : check = false;
+                default : System.out.println("lua chon khong hop le! vui long thu lai");
                 
                 	
  }}}}

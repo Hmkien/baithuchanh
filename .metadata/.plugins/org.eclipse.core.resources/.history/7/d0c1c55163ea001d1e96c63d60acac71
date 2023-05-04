@@ -43,9 +43,8 @@ public class mian {
                 case 4:
                     System.out.print("Nhập tên cần tìm kiếm: ");
                     ten= sc.nextLine();
-                    danhBa.timKiem(ten);
-                    break;
+                    System.out.println(danhBa.timKiem(ten));
                 case 0 : a = 2;
-                
+
                 	
  }}}}

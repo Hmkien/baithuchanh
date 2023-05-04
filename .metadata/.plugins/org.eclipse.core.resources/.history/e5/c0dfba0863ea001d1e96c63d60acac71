@@ -21,13 +21,11 @@ public class DanhBaDienThoai implements danhba {
         }
     }
 
-    public void  timKiem(String ten) {
+    public String timKiem(String ten) {
         if (danhBa.containsKey(ten)) {
-            System.out.println(danhBa.get(ten)); 
-        }else {
-        	System.out.println("Không timf thấy!");
+            return danhBa.get(ten);
         }
-        	
+        return null;
     }
    
 }
