@@ -1,0 +1,34 @@
+package Lists;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Student {
+	public static String Ten;
+	public static int Tuoi;
+public static void NhapThongTin() {
+	Scanner sc =new Scanner(System.in);
+	System.out.print("Nhập vào tên sịnh viên:");
+	Ten=sc.nextLine();
+	System.out.print("Nhập vào tuổi sinh viên:");
+	Tuoi=sc.nextInt();
+}
+
+public static void HienThi(List<Student> std) {
+	for(Student sdt1 : std) {
+		System.out.println("Tên sinh viên là :"+sdt1.Ten+"Tuoi:"+sdt1.Tuoi);
+	}
+}
+public static void ThemTT(List <Student> std,int n) {
+	for(int i=0;i<n;i++) {
+		List<Student> svi= new ArrayList<>();
+		NhapThongTin();
+	}		
+}
+public static void suaTT(String Ten, int Tuoi,List<Student> std) {
+	if(std.contains(Ten)) {
+		NhapThongTin();
+
+	}
+}
+}

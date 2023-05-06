@@ -25,7 +25,7 @@ public class DanhBaDienThoai implements danhba {
         if (danhBa.containsKey(ten)) {
             System.out.println(danhBa.get(ten)); 
         }else {
-        	System.out.println("Không timf thấy!");
+        	System.out.println("Không tìm thấy!");
         }
         	
     }

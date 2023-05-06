@@ -41,10 +41,10 @@ public class mian {
                     danhBa.xoa(ten);
                     break;
                 case 4:
-                    System.out.print("Nhập tên cần tìm kiếm: ");
-                    ten= sc.nextLine();
+                    System.out.print("Nhập số tên tìm kiếm: ");
+                   ten= sc.nextLine();
                     danhBa.timKiem(ten);
-                    break;
+                   break;
                 case 0 : a = 2;
                 
                 	

@@ -1,0 +1,12 @@
+package Lists;
+
+import java.util.ArrayList;
+
+public class arrayListDemo extends Student {
+	public static void main(String[] args) {
+		ArrayList<Student> stdList= new ArrayList<>();
+		ThemMoi(stdList);
+		HienThi(stdList);
+		
+	}
+}
