@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="baithuchanhlab3.hinhtron"/>
-    <fullyQualifiedTypeName name="baitapkhiranh.giaiphuongtrinhbac2"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.sql.Struct"/>
-    <fullyQualifiedTypeName name="java.awt.image.ColorConvertOp"/>
     <fullyQualifiedTypeName name="javax.sound.midi.SysexMessage"/>
     <fullyQualifiedTypeName name="java.lang.Void"/>
     <fullyQualifiedTypeName name="baithuchanhlab3.hinhtrutron"/>
@@ -39,24 +34,30 @@
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="Lists.ArrayListDemo"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.concurrent.atomic.AtomicIntegerFieldUpdater"/>
     <fullyQualifiedTypeName name="javax.security.auth.kerberos.DelegationPermission"/>
     <fullyQualifiedTypeName name="Lists.LinkedListDemo"/>
     <fullyQualifiedTypeName name="Sets.Student"/>
-    <fullyQualifiedTypeName name="Sets.Student1"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="Sets.HashSetDemo"/>
     <fullyQualifiedTypeName name="model.Student"/>
     <fullyQualifiedTypeName name="Lists.Student"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="Lists.Employee"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="Sets.employee1"/>
+    <fullyQualifiedTypeName name="Sets.hashset"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="Sets.Student1"/>
+    <fullyQualifiedTypeName name="ngay2804.slide85"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="demo.Student"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

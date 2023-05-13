@@ -1,0 +1,12 @@
+ package Sets;
+
+import java.util.HashSet;
+
+public class hashset {
+	public static void main(String[] args) {
+		 HashSet<String> hS= new HashSet<>();
+		 hS.add("Ha");
+		 hS.add("Ha");
+		 System.out.println(hS);
+}
+}

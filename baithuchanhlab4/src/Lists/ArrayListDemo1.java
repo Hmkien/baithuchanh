@@ -1,12 +1,11 @@
 package Lists;
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
-public class ArrayListDemo1 extends Employee {
+import Demo.Employee;
+public class ArrayListDemo1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		ArrayList<Employee> eplList= new ArrayList<>();
+		ArrayList<Employee> eplList =new ArrayList<>();
 		int a=1;
 		while(a==1) {
 		System.out.println("\n1.Thêm Thông Tin.");
@@ -19,14 +18,14 @@ public class ArrayListDemo1 extends Employee {
 			luachon=sc.nextInt();	
 		}while((luachon<=0)||(luachon>4));
 		switch(luachon) {
-		case 1: ThemThongTin(eplList);
-				break;
-		case 2: HienTHi(eplList);
-				break;
-		case 3: Update(eplList);
-				break;
-		case 4: deLete(eplList);
-				break;
+		case 1 : Employee.ThemThongTin(eplList);
+		break;
+		case 2 : Employee.HienTHi(eplList);
+		break;
+		case 3 : Employee.Update(eplList);
+		break;
+		case 4: Employee.deLete(eplList);
+		break;
 }
 		}
 	}

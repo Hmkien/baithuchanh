@@ -1,0 +1,13 @@
+package ngay2804;
+
+import java.util.ArrayList;
+
+import demo.Student;
+
+public class vovan {
+	 public static void main(String[] args) {
+		ArrayList<Student> std=new ArrayList<>();
+		Student.addList(std);
+		Student.HienThi(std);
+	}
+}

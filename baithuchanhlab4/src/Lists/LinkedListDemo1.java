@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class LinkedListDemo1 extends Employee {
+import Demo.Employee;
+
+public class LinkedListDemo1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		LinkedList<Employee> eplList = new LinkedList<>();
@@ -20,13 +22,13 @@ public class LinkedListDemo1 extends Employee {
 			luachon=sc.nextInt();	
 		}while((luachon<=0)||(luachon>4));
 		switch(luachon) {
-		case 1: ThemThongTin(eplList);
+		case 1: Employee.ThemThongTin(eplList);
 				break;
-		case 2: HienTHi(eplList);
+		case 2: Employee.HienTHi(eplList);
 				break;
-		case 3: Update(eplList);
+		case 3: Employee.Update(eplList);
 				break;
-		case 4: deLete(eplList);
+		case 4: Employee.deLete(eplList);
 				break;
 }
 		}

@@ -1,7 +1,9 @@
 package Sets;
 import java.util.HashSet;
 import java.util.Scanner;
-public class HashSetDemo extends Student1 {
+import Demo.Student;
+import Demo.Student1;
+public class HashSetDemo{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		HashSet<Student1> stdList = new HashSet<>();
@@ -19,13 +21,13 @@ public class HashSetDemo extends Student1 {
 		}while((luachon<=0)||(luachon>4));
 		switch(luachon) {
 		case 1: 
-			ThemMoi(stdList);
+			Student1.ThemMoi(stdList);
 				break;
-		case 2: HienThi(stdList);
+		case 2: Student1.HienThi(stdList);
 				break;
-		case 3: Update(stdList);
+		case 3: Student1.Update(stdList);
 				break;
-		case 4: Delete(stdList);
+		case 4: Student1.Delete(stdList);
 				break;
 		}
 	}

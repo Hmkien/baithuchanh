@@ -3,7 +3,9 @@ package Lists;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class LinkedListDemo extends Student {
+import Demo.Student;
+
+public class LinkedListDemo{
 	public static void main(String[] args) {
 		Scanner	 sc = new Scanner(System.in);
 		LinkedList<Student> lkList = new LinkedList<>();
@@ -20,13 +22,13 @@ public class LinkedListDemo extends Student {
 			
 		}while((luachon<=0)||(luachon>4));
 		switch(luachon) {
-		case 1: ThemMoi(lkList);
+		case 1: Student.ThemMoi(lkList);
 				break;
-		case 2: HienThi(lkList);
+		case 2: Student.HienThi(lkList);
 				break;
-		case 3: Update(lkList);
+		case 3: Student.Update(lkList);
 				break;
-		case 4: Delete(lkList);
+		case 4: Student.Delete(lkList);
 				break;
 		}
 	}

@@ -3,7 +3,9 @@ package Lists;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayListDemo extends Student {
+import Demo.Student;
+
+public class ArrayListDemo  {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Student> stdList= new ArrayList<>();
@@ -20,13 +22,13 @@ public class ArrayListDemo extends Student {
 			
 		}while((luachon<=0)||(luachon>4));
 		switch(luachon) {
-		case 1: ThemMoi(stdList);
+		case 1: Student.ThemMoi(stdList);
 				break;
-		case 2: HienThi(stdList);
+		case 2: Student.HienThi(stdList);
 				break;
-		case 3: Update(stdList);
+		case 3: Student.Update(stdList);
 				break;
-		case 4: Delete(stdList);
+		case 4: Student.Delete(stdList);
 				break;
 		}
 	}
