@@ -13,9 +13,9 @@ public class slide85 {
 		newHs.put("BG", "Bac Giang");
 		newHs.put("TB","Thai Binh");
 		newHs.put("TH","Thanh Hoa");
-		Set<Map.Entry<String,String>>  setnewHs = newHs.entrySet();
+		Set<Map.Entry<String,String>> SetnewHs = newHs.entrySet();
 		System.out.println(" cac entry co trong map la:");
-		System.out.println(setnewHs);
+		System.out.println(SetnewHs);
 	
 }
 }
