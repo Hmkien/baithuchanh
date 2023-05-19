@@ -1,0 +1,19 @@
+package baitaplab2;
+
+public class Animal {
+	protected String Name;
+
+
+	public Animal(String name) {
+		this.Name = name;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+	
+}

@@ -50,15 +50,16 @@ public class Student1 extends Student {
 	    System.out.println("Nhập tên sinh viên cần xóa");
 	    String ten = sc.nextLine();
 	    boolean a= false;
-	    for(Student1 str : stdList)
+	    for(Student1 str : stdList) {
 			if (str.getFullName().equals(ten)) {
 	            stdList.remove(str);
 	            System.out.println("Xóa thành công");
 	            a=true;
+	            break;
 	        }
+	    }
 	    if(!a) {
 	    	System.out.println("Không tìm thấy trong danh sách");
 	    }
-
-	}
+}
 }

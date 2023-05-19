@@ -1,0 +1,11 @@
+package baitapcuoichuong;
+
+import java.util.ArrayList;
+
+public class Bai3 {
+	public static void main(String[] args) {
+		ArrayList<SinhVien> SVLisr= new ArrayList<>();
+		SinhVien.ThemSinhVien(SVLisr);
+		SinhVien.HienThi(SVLisr);
+	}
+}

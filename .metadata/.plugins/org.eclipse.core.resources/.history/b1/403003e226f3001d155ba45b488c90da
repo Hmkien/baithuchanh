@@ -1,0 +1,43 @@
+package baitapcuoichuong;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class SinhVien {
+	public String Ten;
+	public double Diem;
+	public  static void ThemSinhVien(List<SinhVien> arr)
+	{ Scanner sc = new Scanner(System.in);
+		String Name;
+		double score;
+		do {
+			System.out.println("Nhập vào tên sinh viên:");
+			Name=sc.nextLine();
+			if(!Name.isEmpty()) {
+				System.out.println("Nhập điểm của sinh viên:");
+				score= Double.parseDouble(sc.nextLine());
+				SinhVien sv = new SinhVien();
+				sv.Diem=score;
+				sv.Ten=Name;
+				arr.add(sv);
+			}
+			else
+				break;
+		}while(true);
+	}
+	public static void DemSinhVien(List<SinhVien> arr) {
+		int dem=0;
+		for(SinhVien number : arr){
+			if(number.Diem<=5) {
+				dem++;
+				System.out.printf("Sinh viên: %s  %f điểm: Thi Lại\n",number.Ten,number.Diem);
+			}
+		} 
+		System.out.println("số sinh viên thi lại là:"+dem);
+	}
+	public static void HienThi(List<SinhVien> sv) {
+		for(int i=0;i<sv.size();i++) {
+			System.out.printf("Sinh viên: %s %f điểm\n",sv.get(i).Ten,sv.get(i).Diem);
+		}
+	}
+}

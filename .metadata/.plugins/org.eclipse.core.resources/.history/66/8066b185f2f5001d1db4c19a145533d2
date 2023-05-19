@@ -1,0 +1,64 @@
+package baitapcuoichuong;
+
+import java.util.Map;
+import java.util.Scanner;
+
+public class SinhVien5 {
+	public String MaSV;
+	public String HoTen;
+	public String Lop;
+	public SinhVien5(String MaSV, String HoTen, String Lop) {
+		this.MaSV = MaSV;
+		this.HoTen = HoTen;
+		this.Lop = Lop;
+	}
+
+	public static void Add(Map<String, SinhVien5> abc) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Nhập số lượng sinh viên: ");
+		int n = sc.nextInt();
+		sc.nextLine();
+		for (int i = 0; i < n; i++) {
+			System.out.printf("Nhập thông tin sinh viên thứ %d:  ", i + 1);
+			System.out.print("\nNhập mã sinh viên:");
+			String maSV = sc.nextLine();
+			System.out.print("Nhập họ và tên ");
+			String hoTen = sc.nextLine();
+			System.out.print("Nhập lớp:");
+			String lop = sc.nextLine();
+
+			SinhVien5 sinhVien = new SinhVien5(maSV, hoTen, lop);
+			abc.put(maSV, sinhVien);
+		}
+	}
+
+	public static void show(Map<String, SinhVien5> lkm) {
+		System.out.println("Danh sach sinh vien:");
+		for (SinhVien5 sinhVien : lkm.values()) {
+			System.out.println("Sinh viên " + sinhVien.HoTen + " - mã sinh viên:" + sinhVien.MaSV + " - " + "Lớp" + sinhVien.Lop);
+		}
+	}
+
+	public static void findbyLop(Map<String, SinhVien5> abc) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhập lớp cần tìm");
+		String lop= sc.nextLine();
+		for(SinhVien5 Std : abc.values()) {
+			if(Std.Lop.equals(lop)) {
+				System.out.println("Sinh viên " + Std.HoTen + " - mã sinh viên:" + Std.MaSV + " - " + "Lớp" + Std.Lop);
+			}
+		}
+	}
+	public static void findbyMaSv(Map<String,SinhVien5> abc) {
+		 Scanner sc = new Scanner(System.in);
+		System.out.println("Nhập mã sinh viên cần tìm:");
+		String ma= sc.nextLine();
+	for(Map.Entry<String,SinhVien5> std :abc.entrySet()) {
+			if(std.getKey().equals(ma)) {
+				System.out.println("Sinh viên " + std.getValue().HoTen + " - mã sinh viên:" + std.getValue().MaSV + " - " + "Lớp" + std.getValue().Lop);
+			}
+		
+		
+	}
+	}
+}

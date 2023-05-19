@@ -1,0 +1,32 @@
+package baitapcuoichuong;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class SinhVien {
+	public String Ten;
+	float Diem;
+	public static void ThemSinhVien(List<SinhVien> sv)
+	{	
+		Scanner sc =new Scanner(System.in);
+		String Ten;
+		do {
+			System.out.println("Nhập vào tên sinh viên");
+			Ten = sc.nextLine();
+
+			if (!Ten.isEmpty()) {
+				System.out.println("Nhập vào điểm ");
+            float Diem = sc.nextFloat();sc.nextLine();
+            SinhVien student = new SinhVien();
+            student.Diem=Diem;
+            student.Ten=Ten;
+            sv.add(student);
+        }
+    } while (!Ten.isEmpty());
+	}
+	public static void HienThi(List<SinhVien> sv) {
+		for(int i=0;i<sv.size();i++) {
+			System.out.printf("Sinh viên: %s %f điểm",sv.get(i).Ten,sv.get(i).Diem);
+		}
+	}
+}

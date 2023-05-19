@@ -1,0 +1,68 @@
+package baitapcuoichuong;
+
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class SinhVien5 {
+	public String MaSV;
+	public String HoTen;
+	public String Lop;
+
+	public SinhVien5(String MaSv, String HoTen, String Lop) {
+		this.MaSV = MaSV;
+		this.HoTen = HoTen;
+		this.Lop = Lop;
+	}
+
+	public void setMaSv(String MaSV) {
+		this.MaSV = MaSV;
+	}
+
+	public String getMaSV() {
+		return MaSV;
+	}
+
+	public void setHoTen(String HoTen) {
+		this.HoTen = HoTen;
+	}
+
+	public String getHoTen() {
+		return HoTen;
+	}
+
+	public void setLop(String MaSV) {
+		this.Lop = Lop;
+	}
+
+	public String getLop() {
+		return Lop;
+	}
+
+	public static void Add(Map<String, SinhVien5> abc) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhập vào số lương sinh viên:");
+		int n = sc.nextInt();
+		for (int i = 0; i < n; i++) {
+			System.out.println("nhập vào mã sinh viên:");
+			String MaSV = sc.nextLine();sc.nextLine();
+			System.out.println("Nhập vào họ tên sinh viên");
+			String HoTen = sc.nextLine();
+			System.out.println("Nhập lớp :");
+			String Lop = sc.nextLine();
+			SinhVien5 sv = new SinhVien5(MaSV, HoTen, Lop);
+			SinhVien5 NewSv = new SinhVien5(MaSV, HoTen, Lop);
+			abc.put(MaSV, sv);
+		}
+	}
+
+	public static void show(Map<String, SinhVien5> lkm) {
+		for (Entry<String, SinhVien5> m : lkm.entrySet()) {
+
+			System.out.printf("Sinh viên %s,mã sinh viên : %s,lớp %s\n", m.getValue().HoTen, m.getValue().MaSV,
+					m.getValue().Lop);
+		}
+	}
+
+}

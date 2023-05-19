@@ -1,0 +1,41 @@
+package baitapcuoichuong;
+import java.util.Map;
+import java.util.Scanner;
+
+public class SinhVien5 {
+	public String MaSV;
+	public String HoTen;
+	public String Lop;
+
+	public SinhVien5(String MaSV, String HoTen, String Lop) {
+		this.MaSV = MaSV;
+		this.HoTen = HoTen;
+		this.Lop = Lop;
+	}
+	
+	public static void Add(Map<String, SinhVien5> abc) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Nhap so luong sinh vien: ");
+		int n = scanner.nextInt();
+		for (int i = 0; i<n; i++) {
+			System.out.print("Nhập thông tin sinh viên thứ %d:  " + (i + 1));
+			System.out.print("Nhập mã sinh viên:");
+			String maSV = scanner.nextLine();
+			System.out.print("Nhập họ và tên ");
+			String hoTen = scanner.nextLine();
+			System.out.print("Nhập lớp:");
+			String lop = scanner.nextLine();
+
+			SinhVien5 sinhVien = new SinhVien5(maSV, hoTen, lop);
+			abc.put(maSV, sinhVien);
+		}
+	}
+
+	public static void show(Map<String, SinhVien5> lkm) {
+		System.out.println("Danh sach sinh vien:");
+		for (SinhVien5 sinhVien : lkm.values()) {
+			System.out
+					.println("Sinhvien " + sinhVien.HoTen + " - " + sinhVien.MaSV + " - " + "Lớp" + sinhVien.Lop);
+		}
+	}
+}

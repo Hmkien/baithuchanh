@@ -1,0 +1,11 @@
+package baitapcuoichuong;
+import java.util.LinkedList;
+
+public class Bai3 {
+	public static void main(String[] args) {
+		LinkedList<SinhVien> SVLisr= new LinkedList<>();
+		SinhVien.ThemSinhVien(SVLisr);
+		SinhVien.HienThi(SVLisr);
+		SinhVien.DemSinhVien(SVLisr);
+	}
+}

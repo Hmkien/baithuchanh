@@ -1,0 +1,30 @@
+package baitapcuoichuong;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class bai4 {
+public static void main(String[] args) {
+	Scanner sc =new Scanner(System.in);
+	HashSet<String> Fruit = new HashSet<>();
+	 String HoaQua;
+	 String Stop="stop";
+	do {
+	System.out.println("Nhập vào tên hoa quả,:");
+	HoaQua=sc.nextLine();
+	if(!HoaQua.isEmpty()) {
+		Fruit.add(HoaQua);
+		}
+	}while(!HoaQua.equals(Stop));
+	HienThi(Fruit);
+	}
+	
+	public static void HienThi(HashSet<String> ar) {
+	System.out.println("Danh sách hoa quả là:");
+		for(String a : ar) {
+			System.out.println(a+"\t");
+		}
+	}
+}
