@@ -4,9 +4,10 @@ import java.util.Scanner;
 import baitapcuoichuong.SinhVien;
 public class side112 {
 	public static void main(String[] args) {
-			Scanner sc = new Scanner(System.in);
+			Scanner sc = new Scanner(System.in);	
 			ArrayList<SinhVien> sinhVien=new ArrayList<>();
 			int a=1;
+	
 			while(a==1) {
 				System.out.println("\n1.Thêm sinh viên");
 				System.out.println("2.Hiển thị sinh viên");
